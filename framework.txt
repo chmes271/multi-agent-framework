@@ -1,0 +1,14 @@
+retail_analytics_framework/
+│
+├── config.py                # Configuration and environment variables
+├── main.py                  # Entry point to execute the framework
+│
+├── database/
+│   └── connection.py        # Connectors for Excel, PDF text parsers, and DBs
+│
+└── agents/
+    ├── __init__.py
+    ├── base_agent.py        # Abstract base agent class
+    ├── sql_agent.py         # Shared text-to-SQL reasoning agent
+    ├── domain_agents.py     # 5 Domain agents (Pricing, Inventory, etc.)
+    └── orchestrator.py      # Final Root Orchestrator (Why-behind-the-context)
