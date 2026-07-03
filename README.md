@@ -1,6 +1,6 @@
 # multi-agent-framework
 
-An asynchronous, tool-enabled multi-agent architecture designed to diagnose complex cross-functional business problems in retail ecosystems (e.g., "Why are gross margins dropping despite volume growth?").
+An asynchronous, tool-enabled multi-agent architecture designed to diagnose complex cross-functional business problems in retail ecosystems ("Why are gross margins dropping despite volume growth?").
 
 This framework implements a Hub-and-Spoke dependency model, allowing five domain-specific agents to collaboratively query real-time data sources by accessing a specialized Text-to-SQL Agent as a shared diagnostic utility tool. A Root Orchestrator finally synthesizes the inputs into a cohesive root-cause analysis. 
 
