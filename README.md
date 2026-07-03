@@ -4,24 +4,24 @@ An asynchronous, tool-enabled multi-agent architecture designed to diagnose comp
 
 This framework implements a Hub-and-Spoke dependency model, allowing five domain-specific agents to collaboratively query real-time data sources by accessing a specialized Text-to-SQL Agent as a shared diagnostic utility tool. A Root Orchestrator finally synthesizes the inputs into a cohesive root-cause analysis. 
 
-Core Architecture Components
-Data Ingestion Engine: Acts as an abstraction layer across physical databases, Excel workbooks, and raw text extraction pipelines.
+# Core Architecture Components
+1. Data Ingestion Engine: Acts as an abstraction layer across physical databases, Excel workbooks, and raw text extraction pipelines.
 
-The SQL Agent (The Utility Hub): Accepts plain-text instructions from any sibling agent, handles Chain-of-Thought reasoning to maps the prompt against schema context, constructs structured SQL, and retrieves raw tabular data arrays.
+2. The SQL Agent (The Utility Hub): Accepts plain-text instructions from any sibling agent, handles Chain-of-Thought reasoning to maps the prompt against schema context, constructs structured SQL, and retrieves raw tabular data arrays.
 
-Domain Agents (The Spokes): Five functional retail domain brains focusing on independent operational streams:
+3. Domain Agents (The Spokes): Five functional retail domain brains focusing on independent operational streams:
 
-Pricing & Promotion: Analyzes markdown elasticities and margin erosion.
+4. Pricing & Promotion: Analyzes markdown elasticities and margin erosion.
 
-Inventory Management: Identifies systemic stock-out events and shrinkage issues.
+5. Inventory Management: Identifies systemic stock-out events and shrinkage issues.
 
-Supply Chain & Logistics: Surfaces freight bottlenecks, lead times, and port delays.
+6. Supply Chain & Logistics: Surfaces freight bottlenecks, lead times, and port delays.
 
-Planning: Evaluates forward-looking demand forecasting variance.
+5. Planning: Evaluates forward-looking demand forecasting variance.
 
-Sourcing: Validates raw material index trends and COGS discrepancies.
+6. Sourcing: Validates raw material index trends and COGS discrepancies.
 
-Root Orchestrator: The structural convergence node that synthesizes downstream agent readouts to find the definitive cross-functional "Why" behind performance shifts.
+7. Root Orchestrator: The structural convergence node that synthesizes downstream agent readouts to find the definitive cross-functional "Why" behind performance shifts.
 
 retail_analytics_framework/
 │
